@@ -1,4 +1,4 @@
-package generics
+package generics_concurrency
 
 import "fmt"
 
@@ -21,9 +21,9 @@ func MapsAlgorithm() {
 	result := MyMap(slice, func(i int) int {
 		return i * i
 	})
-	fmt.Println(result)
+	fmt.Printf("%v\n", result)
 	result2 := GenericMap(slice, func(i int) int {
 		return i * 5
 	})
-	fmt.Println(result2)
+	fmt.Printf("%v\v", result2)
 }

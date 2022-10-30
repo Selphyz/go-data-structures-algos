@@ -1,4 +1,4 @@
-package generics
+package generics_concurrency
 
 import (
 	"fmt"
@@ -71,13 +71,13 @@ func SortAlgorthm() {
 	result = addStudent[String](result, "Jenny")
 	result = addStudent[String](result, "Elaine")
 	sort.Sort(OrderedSlice[String](result))
-	fmt.Println(result)
+	fmt.Printf("%v\n", result)
 	var student1 []Integer
 	result1 := addStudent[Integer](student1, 155)
 	result1 = addStudent[Integer](result1, 112)
 	result1 = addStudent[Integer](result1, 120)
 	sort.Sort(OrderedSlice[Integer](result1))
-	fmt.Println(result1)
+	fmt.Printf("%v\n", result1)
 	var students2 []Student // Empty slice
 	result2 := addStudent(students2, Student{"John", 213, 17.5})
 	result2 = addStudent(result2, Student{"James", 111, 18.75})
@@ -85,5 +85,5 @@ func SortAlgorthm() {
 	PerformSort[Student](result2, func(s1, s2 Student) bool {
 		return s1.Age < s2.Age
 	})
-	fmt.Println(result2)
+	fmt.Printf("%v\n", result2)
 }

@@ -1,7 +1,7 @@
 package main
 
-import "data-structures-algos/generics"
+import "data-structures-algos/generics_concurrency"
 
 func main() {
-	generics.FilterAlgorithm()
+	generics_concurrency.MyGoRoutines()
 }
