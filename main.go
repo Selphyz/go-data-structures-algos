@@ -1,7 +1,7 @@
 package main
 
-import "data-structures-algos/generics_concurrency"
+import "data-structures-algos/sort_search"
 
 func main() {
-	generics_concurrency.Mutex()
+	sort_search.BubbleSort()
 }
